@@ -1,5 +1,7 @@
 import math
-NumeroTxT=open("Rn.txt").read()
+
+NumeroTxT=open("rnP.txt").read() #numeros psudoAleatorios de python
+#NumeroTxT=open("Rn.txt").read()
 NumeroTxT=NumeroTxT.split(",")
 NumeroTxT.pop()
 #datos de pruebas
@@ -11,6 +13,7 @@ for i in NumeroTxT:
     convertirN=float(i)
     Numero.append(convertirN)
 
+print("PRUEBAS DE CORRIDAS")
 corridas=0
 numerosPos=0
 numerosNeg=0
@@ -50,9 +53,9 @@ print("S=",S)
 print("Z=",Z)
 
 if Z>-1.96 and Z<1.96:
-    print("Hay independencia")
+    print("Si pasa la prueba de independencia")
 else:
-    print("No hay independencia")
+    print("No pasa la prueba de independencia")
 
 
 def imprimirSignos(): 
